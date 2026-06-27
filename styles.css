@@ -70,7 +70,48 @@ body {
 .nav-links a:hover {
     color: var(--secondary-color);
 }
+/* add btn  */
+.download-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
 
+.glass-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 28px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 18px;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  transition: all 0.35s ease;
+}
+
+.glass-btn i {
+  font-size: 1.2rem;
+}
+
+.glass-btn:hover {
+  transform: translateY(-5px) scale(1.03);
+  background: rgba(255, 255, 255, 0.22);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+.glass-btn:active {
+  transform: scale(0.97);
+}
 /* Hero Section */
 .hero {
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
