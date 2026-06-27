@@ -11,7 +11,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+document.querySelectorAll('.glass-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    btn.style.transform = 'scale(0.95)';
 
+    setTimeout(() => {
+      btn.style.transform = '';
+    }, 150);
+  });
+});
 // Add animation to elements on scroll
 const observerOptions = {
     threshold: 0.1,
